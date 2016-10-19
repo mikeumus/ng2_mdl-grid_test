@@ -34,8 +34,13 @@ body{
   h1,h2{
     margin: 0;
   }
+  .md-toolbar-layout{
+    width: 100%;
+  }
 }
 .header-nav__content {
+
+  width: 100%;
 
   h1{
     font-size: 23px;
