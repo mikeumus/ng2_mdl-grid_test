@@ -9,6 +9,42 @@
 $primary: md-palette($md-blue-grey);
 $accent: md-palette($md-blue);
 
-$theme: md-light-theme($primary, $accent);
+// TODO Needs to be an full "palette set" as seen here:
+// https://git.io/vPHT8
+// $bloom-bg-grey: md-palette(rgb(13, 15, 18), A200, A100, A400);
+
+$theme: md-dark-theme($primary, $accent/*, $bloom-bg-grey*/ );
 
 @include angular-material-theme($theme);
+
+
+body{
+  font-family: Open Sans;
+  font-size: 12px;
+  color: #9ca4ab;
+  background-color: rgb(0, 0, 0);
+}
+
+.time-zone {
+  display: block;
+  text-align: right;
+}
+
+.header-nav {
+  h1,h2{
+    margin: 0;
+  }
+}
+.header-nav__content {
+
+  h1{
+    font-size: 23px;
+  }
+  h2{
+    font-size: 17px;
+    text-transform: uppercase;
+    line-height: inherit;
+  }
+}
+
+
