@@ -1,28 +1,34 @@
 <span class="time-zone"> Time Zone: EDT </span>
 
 <md-toolbar class="header-nav" color="bloom-bg-grey">
-    <span class="header-nav__content mdl-grid">
-      <span class="mdl-cell mdl-cell--4-col">
+    <span class="header-nav__content">
+      <span>
         <h1> Bloomberg </h1>
         <h2> {{ title }} </h2>
       </span>
-      <md-tab-group class="header-nav__content mdl-cell mdl-cell--6-col">
-        <md-tab>
-          <template md-tab-label> Feeds </template>
-          <template md-tab-content>
-            <h1>Some tab content</h1>
-            <p>...</p>
-          </template>
-        </md-tab>
-        <md-tab>
-          <template md-tab-label> Connectivity </template>
-          <template md-tab-content>
-            <h1>Some more tab content</h1>
-            <p>...</p>
-          </template>
-        </md-tab>
-      </md-tab-group>
     </span> <!-- end header-nav__content -->
+    <md-tab-group class="header-nav__content">
+      <md-tab>
+        <template md-tab-label> Feeds </template>
+        <template md-tab-content>
+          <h1>Some tab content</h1>
+          <p>...</p>
+        </template>
+      </md-tab>
+      <md-tab>
+        <template md-tab-label> Connectivity <md-icon> keyboard_arrow_down </md-icon> </template>
+        <template md-tab-content>
+          <h1>Some more tab content</h1>
+          <p>...</p>
+        </template>
+      </md-tab>
+    </md-tab-group>
+    <span class="header-nav__content header-nav__user">
+      <span class="user__name">
+        Rachel Spark <md-icon> keyboard_arrow_down </md-icon>
+      </span>
+    </span>
+
 
 </md-toolbar>
 

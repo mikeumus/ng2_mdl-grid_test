@@ -28,28 +28,63 @@ body{
 .time-zone {
   display: block;
   text-align: right;
+  padding: 4px 25px;
+  font-size: 11px;
 }
 
+$header-nav-height: 72px;
 .header-nav {
-  h1,h2{
-    margin: 0;
+
+  md-icon {
+    vertical-align: middle;
   }
-  .md-toolbar-layout{
-    width: 100%;
+  md-tab-group {
+    align-self: baseline;
+
+    .md-tab-label {
+      height: $header-nav-height;
+      padding: 12px 12px 0;
+    }
+  } /* end md-tab-group */
+
+  .header-nav__user {
+    position: absolute;
+    right: 0;
   }
-}
+
+  md-toolbar-row{
+    height: $header-nav-height;
+    flex-wrap: wrap;
+  }
+
+  h1,h2{  margin: 0;  }
+  .md-toolbar-layout{  width: 100%;  }
+} /* end .header-nav */
+
 .header-nav__content {
 
-  width: 100%;
+  padding: 0 73px 0 13px;
 
-  h1{
-    font-size: 23px;
-  }
+  h1{  font-size: 21px;  }
   h2{
-    font-size: 17px;
+    font-size: 15px;
     text-transform: uppercase;
     line-height: inherit;
   }
+}
+
+.user__name {
+  font-size: 14px;
+  color: #cccccc;
+
+  md-icon {
+    border: 1px solid grey;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 23px;
+    margin: 0 0 0 13px;
+  }
+
 }
 
 

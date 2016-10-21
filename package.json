@@ -4,8 +4,10 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-    "start": "ng serve -host=0.0.0.0 -p=8081",
-    "build": "ng b -bh='./' -o='./dist/'",
+    "start": "ng serve -dev -p=8081",
+    "start:prod": "ng serve -prod -p=8081",
+    "build": "ng b -prod -bh='./' -o='./dist/'",
+    "build:dev": "ng b -dev -bh='./' -o='./dist/'",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
     "pree2e": "webdriver-manager update",
